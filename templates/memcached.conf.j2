@@ -45,3 +45,6 @@ logfile /var/log/memcached.log
 
 # Maximize core file limit
 # -r
+
+# Max entry size
+-I {{ memcached_max_entry_size|default('1M') }}
